@@ -13,19 +13,19 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      
-        width: {
-          '100': '404px',
-          "full":"436px"
-        },
-        height: {
-          '100': '41.563rem',
-          "0.5":"2px",
-          "22":"88px"
-        },
-        pb:{
-          "100":"500px"
-        }
+      width: {
+        '100': '100%', // Changed to percentage for responsiveness
+        '400px': '400px', // Adding a pixel-based width for fixed width elements
+      },
+      height: {
+        '100': '100vh', // Full viewport height for responsiveness
+        '41.563rem': '41.563rem', // Keeping rem for consistent spacing
+        '0.5': '2px', // Fine control for very small height elements
+        '22': '88px', // Standard height definition
+      },
+      pb: {
+        '100': '500px', // Padding-bottom
+      },
     },
   },
   plugins: [],

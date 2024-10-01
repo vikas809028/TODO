@@ -1,27 +1,3 @@
-// import {connect} from "../../../../dbConfig/dbConfig";
-// import Todo from "../../../../models/todoModel"
-// import { NextRequest, NextResponse } from "next/server";
-
-
-// connect()
-
-
-// export async function POST(req: NextRequest){
-//     try {
-        
-//         const todos = await Todo.find({}).limit(5);
-//         const response = NextResponse.json({
-//             message: "Todo Fetched",
-//             success: true,
-//             todos:todos
-//         })
-//         return response;
-
-//     } catch (error: any) {
-//         return NextResponse.json({error: error.message}, {status: 500})
-//     }
-// }
-
 import { connect } from "../../../../dbConfig/dbConfig";
 import Todo from "../../../../models/todoModel";
 import { NextRequest, NextResponse } from "next/server";
