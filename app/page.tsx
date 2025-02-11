@@ -61,7 +61,7 @@ const Todo = () => {
     <div className="w-full lg:my-0 border-[1px] md:w-8/12 lg:w-6/12 mx-auto">
       <Header />
 
-      <div className="relative min-h-[80vh] lg:min-h-[80vh]">
+      <div className="relative min-h-[76vh] lg:min-h-[80vh]">
         <header className="flex py-4 px-2 w-full bg-gray-200 items-center justify-between">
           <button
             type="button"
@@ -101,14 +101,14 @@ const Todo = () => {
                   className="p-4 bg-gray-50 rounded-lg shadow-md hover:cursor-pointer flex flex-col"
                   onClick={() => router.push(`/edittodo/${todo._id}`)}
                 >
-                  <h2 className="font-bold bg-white text-base sm:text-lg">
+                  <h2 className="font-bold bg-gray-50 text-base sm:text-lg">
                     {todo.title}
                   </h2>
-                  <div className="flex flex-col bg-white mt-1">
-                    <p className="text-sm sm:text-base bg-white">
+                  <div className="flex flex-col bg-gray-50 mt-1">
+                    <p className="text-sm sm:text-base bg-gray-50">
                       {todo.description}
                     </p>
-                    <span className="text-xs bg-white sm:text-sm text-gray-500 mt-1 sm:mt-2">
+                    <span className="text-xs bg-gray-50 sm:text-sm text-gray-500 mt-1 sm:mt-2">
                       {todo.date}
                     </span>
                   </div>
