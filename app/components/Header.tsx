@@ -1,7 +1,7 @@
 import logo from "../../public/logo.svg";
 const Header = () => {
   return (
-    <div className="w-full h-[10vh] sticky top-0 bg-white flex items-center justify-center">
+    <div className="w-full h-[10vh] z-10 sticky top-0 bg-white flex items-center justify-center">
       <svg
         width="115"
         height="41"

@@ -59,7 +59,7 @@ const Addtodo = () => {
     getTodo();
   }, []);
   return (
-    <div className="w-full bg-[#f4f4f4] p-4 box-border mx-auto border-transparent">
+    <div className="w-full md:w-8/12 lg:w-6/12 min-h-[98vh] mx-auto flex flex-col justify-center">
       <div className="w-full bg-transparent flex items-center h-16">
         <button
           className="flex items-center w-100 h-9 font-bold text-2xl mx-auto"
@@ -72,8 +72,11 @@ const Addtodo = () => {
         </button>
       </div>
 
-      <div className="box-border bg-white pt-4 pe-2 ps-4 pb-100 w-100 mx-auto h-96  rounded-2xl">
-        <div className="flex justify-between lg:justify-center items-center">
+      <div
+        className="box-border bg-white p-4 pe-2 ps-4 pb-100 w-100 mx-auto h-96  rounded-lg
+      "
+      >
+        <div className="flex p-2 bg-white justify-between lg:justify-center items-center">
           <input
             className="box-border p-2 mr-2 border-2 rounded-lg border-[#f3efef] focus:outline-none "
             type="text"
@@ -82,7 +85,7 @@ const Addtodo = () => {
             onChange={(e) => setTodo({ ...todo, title: e.target.value })}
           />
           <RiDeleteBin6Line
-            className="text-2xl box-border shadow-lg hover:cursor-pointer"
+            className="text-2xl bg-white box-border shadow-lg hover:cursor-pointer"
             onClick={() => {
               handledelete();
             }}
@@ -90,9 +93,8 @@ const Addtodo = () => {
         </div>
         <div>
           <svg
-            
             height="49"
-            className="box-border w-100"
+            className="box-border bg-white w-100"
             viewBox="0 0 388 49"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -148,18 +150,17 @@ const Addtodo = () => {
           </svg>
         </div>
         <textarea
-          className="focus:border-none focus:outline-none w-100 mt-5"
+          className="focus:border-none p-2 rounded-lg  focus:outline-none w-100 mt-5"
           onChange={(e) => {
             setTodo({ ...todo, description: e.target.value });
           }}
           value={todo.description}
-         
-          rows={10}
+          rows={9}
         ></textarea>
       </div>
 
       <button
-        className="bg-orange-400 box-border p-2 text-xl mt-5 w-100 flex mx-auto justify-center rounded-lg "
+        className="bg-orange-400 box-border p-2 text-xl w-100 flex mx-auto justify-center rounded-lg "
         onClick={handleedittodo}
       >
         save
