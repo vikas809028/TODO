@@ -94,7 +94,7 @@ const Todo = () => {
         ) : (
           <>
             {/* Todo List */}
-            <div className="flex pt-4 bg-white flex-col p-2 gap-2">
+            <div className="flex pt-4 sm:pt-8 bg-white flex-col p-2 gap-2">
               {todos.map((todo) => (
                 <div
                   key={todo._id}
