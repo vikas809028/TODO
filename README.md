@@ -1,23 +1,63 @@
-## Getting Started
+# TODO App
 
-Open Terminal and use the follwing command to copy repository
+TODO App is a simple yet powerful task management application that helps users organize their daily activities, set priorities, and track progress. This repository provides a clean and intuitive interface for creating, editing, and managing to-do lists efficiently.
 
-```
-git clone https://github.com/vikas809028/TODO.git
-```
+## 🌟 Overview
 
-First, run the development server:
+The application allows users to add, update, delete, and mark tasks as completed. It is ideal for individuals seeking a lightweight productivity tool or developers looking to learn about CRUD operations in modern web development.
 
-```
-npm run dev
-```
+## 🚀 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Frontend:** React.js / HTML / CSS / JavaScript
+- **Backend:** Node.js / Express.js (if applicable)
+- **Database:** MongoDB / LocalStorage (based on implementation)
+- **Other:** Responsive design, form validation
 
-## Learn More
+## 🛠️ Features
 
-## Deploy on Vercel
+- Add, edit, and delete tasks
+- Mark tasks as complete/incomplete
+- Filter tasks by status
+- Responsive UI for mobile and desktop
+- Data persistence using database or local storage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📦 Getting Started
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/vikas809028/TODO.git
+    cd TODO
+    ```
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+3. Start the development server:
+    ```bash
+    npm start
+    ```
+4. Open `http://localhost:3000` in your browser to view the app.
+
+## 📌 Usage
+
+- Create and manage your to-do tasks
+- Check off completed items
+- Delete or modify tasks as needed
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open issues or submit pull requests for improvements.
+
+## 📄 License
+
+Distributed under the [MIT License](LICENSE).
+
+## 📬 Contact
+
+- Email: vikas809028@gmail.com
+- Website: [vikastiwari.dev](https://vikastiwari.dev)
+- Twitter: [@vikas_tiwari80](https://twitter.com/vikas_tiwari80)
+
+---
+
+Built with ❤️ by Vikas Tiwari ([IIT Kanpur](https://prutor.ai))
